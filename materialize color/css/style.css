@@ -1,0 +1,45 @@
+.section {
+    padding: 15px;
+    color: white;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+
+/* Menghitamkan beberapa teks */
+
+.white,
+.transparent,
+[class*="lighten"],
+.cyan[class*="accent"],
+.teal[class*="accent"],
+.green[class*="accent"],
+.light-green[class*="accent"],
+.lime[class*="accent"],
+.yellow[class*="accent"],
+.amber.accent-1,
+.orange.accent-1,
+[class="box yellow"] {
+    color: #424242;
+}
+
+
+/* Diputihkan lagi :v */
+
+.brown.lighten-2,
+.brown.lighten-1,
+.indigo.lighten-2,
+.indigo.lighten-1,
+.purple.lighten-2,
+.purple.lighten-1,
+.deep-purple.lighten-2,
+.deep-purple.lighten-1 {
+    color: white;
+}
+
+.box {
+    cursor: pointer;
+}

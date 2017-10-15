@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Psikoweb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bin/bootstrap/css/bootstrap.min.css">
+    <style type="text/css">
+    .panel {
+        width: 80%;
+        max-width: 400px;
+    }
+    
+    p {
+        margin: 5px;
+    }
+    
+    .outer {
+        display: table;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .inner {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .isi {
+        display: inline-block;
+        margin: auto;
+        width: 100%;
+    }
+    </style>
+    <script type="text/javascript">
+    localStorage.setItem("posisi", "2")
+    </script>
+    <script type="text/javascript" src="bin/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="isi">
+                <center>
+                    <div class="panel panel-default">
+                        <p><strong>Membuka Akses...</strong></p>
+                        <form class="form">
+                            <p>Username:
+                                <input class="username" type="text" name="" autofocus="">
+                            </p>
+                            <p>Password:
+                                <input class="password" type="password" name="">
+                            </p>
+                            <p>
+                                <input type="submit" name="" value="Oke" role="button" class="btn btn-default">
+                            </p>
+                        </form>
+                        <script type="text/javascript">
+                        $(".form").submit(function() {
+                            localStorage.setItem("username", $(".username").val())
+                            localStorage.setItem("password", $(".password").val())
+                        })
+                        </script>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
